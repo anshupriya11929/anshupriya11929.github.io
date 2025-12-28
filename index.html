@@ -2,86 +2,194 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anshupriya Kumar | Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
+:root {
+  --primary: #6a11cb;
+  --secondary: #2575fc;
+  --dark: #1f2933;
+  --light: #f5f7fa;
+  --card: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--dark);
+}
+
+.container {
+  max-width: 1000px;
   margin: auto;
-  padding: 20px;
-  line-height: 1.6;
+  padding: 40px 20px;
 }
-h1, h2 {
-  color: #333;
+
+header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
 }
-a {
-  text-decoration: none;
-  color: #0077b5;
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
 }
-.section {
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+section {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 14px;
   margin-bottom: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.skills span {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
+  font-size: 0.9rem;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  margin-bottom: 5px;
+}
+
+.project a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Anshupriya Kumar</h1>
-<p><strong>Data Analyst</strong></p>
+<div class="container">
 
-<div class="section">
-<h2>About</h2>
-<p>
-I am a Computer Science and Engineering (Data Science) undergraduate with a strong interest in data analysis, visualization, and machine learning.
-I enjoy transforming raw data into meaningful insights using Python, Power BI, and statistical techniques.
-</p>
-</div>
+<header>
+  <h1>Anshupriya Kumar</h1>
+  <p>Data Analyst</p>
+</header>
 
-<div class="section">
-<h2>Skills</h2>
-<ul>
-<li>Python, SQL, Java</li>
-<li>Power BI, Excel</li>
-<li>Pandas, NumPy, Scikit-learn</li>
-<li>Statistics, Machine Learning</li>
-<li>MySQL</li>
-</ul>
-</div>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science and Engineering (Data Science) undergraduate with a strong interest in data analysis,
+    visualization, and machine learning. I enjoy transforming raw data into meaningful insights using Python,
+    Power BI, and statistical techniques.
+  </p>
+</section>
 
-<div class="section">
-<h2>Projects</h2>
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Power BI</span>
+    <span>Excel</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Scikit-learn</span>
+    <span>Machine Learning</span>
+    <span>Statistics</span>
+    <span>MySQL</span>
+  </div>
+</section>
 
-<h3>Disaster Resilience Mapping System</h3>
-<p>
-Developed an interactive disaster resilience mapping system to visualize flood-prone regions using geospatial and historical data.
-Created an HTML-based interactive map for disaster preparedness.
-</p>
-<p><a href="https://github.com/anshupriya11929">GitHub</a></p>
+<section>
+  <h2>Projects</h2>
 
-<h3>Smart Event Recommendation System</h3>
-<p>
-Built a content-based event recommendation system using cosine similarity to improve event discovery and user engagement.
-</p>
-<p><a href="https://github.com/anshupriya11929">GitHub</a></p>
+  <div class="project">
+    <h3>Disaster Resilience Mapping System</h3>
+    <p>
+      Developed an interactive disaster resilience mapping system to visualize flood-prone regions using
+      geospatial and historical data. Created an HTML-based interactive flood resilience map to support
+      disaster preparedness and mitigation planning.
+    </p>
+    <a href="https://github.com/anshupriya11929" target="_blank">View on GitHub →</a>
+  </div>
 
-</div>
+  <div class="project">
+    <h3>Smart Event Recommendation System</h3>
+    <p>
+      Built a personalized event recommendation system using content-based filtering and cosine similarity
+      to improve event discovery and user engagement.
+    </p>
+    <a href="https://github.com/anshupriya11929" target="_blank">View on GitHub →</a>
+  </div>
 
-<div class="section">
-<h2>Certifications</h2>
-<ul>
-<li>AI and Machine Learning Algorithms and Techniques – Coursera (2025)</li>
-<li>Python with Power BI: Analyzing Financial Data – Coursera (2024)</li>
-<li>The Nuts and Bolts of Machine Learning – Coursera (2025)</li>
-<li>Data Visualisation: Empowering Business with Effective Insights – 2025</li>
-</ul>
-</div>
+</section>
 
-<div class="section">
-<h2>Contact</h2>
-<p>Email: kumaram_1@rknec.edu</p>
-<p><a href="https://www.linkedin.com/in/anshupriya-kumar-91a66933b">LinkedIn</a></p>
-<p><a href="https://github.com/anshupriya11929">GitHub</a></p>
+<section>
+  <h2>Certifications</h2>
+  <ul>
+    <li>AI and Machine Learning Algorithms and Techniques – Coursera (2025)</li>
+    <li>Python with Power BI: Analyzing Financial Data – Coursera (2024)</li>
+    <li>The Nuts and Bolts of Machine Learning – Coursera (2025)</li>
+    <li>Data Visualisation: Empowering Business with Effective Insights – 2025</li>
+  </ul>
+</section>
+
+<footer>
+  <p>
+    <a href="mailto:kumaram_1@rknec.edu">Email</a> |
+    <a href="https://www.linkedin.com/in/anshupriya-kumar-91a66933b" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/anshupriya11929" target="_blank">GitHub</a>
+  </p>
+</footer>
+
 </div>
 
 </body>
 </html>
+
+
